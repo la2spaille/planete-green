@@ -1,0 +1,25 @@
+.w-flex--sb{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.w--flex {
+  display: flex;
+}
+.w-page_title {
+  font-size: 3.2rem;
+  color: var(--green);
+  text-transform: capitalize;
+
+}
+.ul-history {
+  display: flex;
+  color: var(--grey);
+  gap: 7.5px;
+  align-items: center;
+  margin: 0 0 20px;
+  text-transform: lowercase;
+  li:last-child{
+    color: var(--green);
+  }
+}

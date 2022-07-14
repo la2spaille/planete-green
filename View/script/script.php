@@ -1,0 +1,1 @@
+<script src="<?= get_theme_file_uri('/js/app.js')?>"></script>

@@ -47,16 +47,15 @@ function planete_green_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus(
-		array(
-			'menu-1' => esc_html__( 'Primary', 'planete-green' ),
-		)
-	);
+	register_nav_menu( 'Primary', 'header' );
 
-	/*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
-		*/
+    add_theme_support('menus');
+
+
+    /*
+        * Switch default core markup for search form, comment form, and comments
+        * to output valid HTML5.
+        */
 	add_theme_support(
 		'html5',
 		array(
@@ -181,4 +180,16 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
+}
+
+
+
+function constant_init()
+{
+    $path = get_theme_file_path() . "/";
+    $page = get_theme_file_path() . "/View/page/";
+    $uri = get_theme_file_uri() . "/";
+    define('ROOT', $path);
+    define('PAGE', $page);
+    define('URI', $uri);
 }

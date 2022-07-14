@@ -1,0 +1,14 @@
+#progress {
+  height: 4px;
+  z-index: 739;
+  top: 106px;
+  &, div {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  div {
+    background: var(--green);
+    height: 100%;
+  }
+}

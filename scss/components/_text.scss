@@ -1,0 +1,17 @@
+.c-text {
+  display: flex;
+  flex-direction: column;
+
+  &.products {
+    align-items: flex-start;
+    gap: 11px;
+    padding: 0 70px 0 0;
+  }
+  &.product_slug {
+    align-items: stretch;
+    align-self: center;
+    gap: 0;
+    padding: 5px 0 0;
+    margin: 0 10px 0 70px;
+  }
+}

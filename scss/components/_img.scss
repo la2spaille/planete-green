@@ -1,0 +1,29 @@
+.c-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  &.products {
+    border: solid;
+
+  }
+ &.product_slug {
+   border: solid var(--green);
+
+   img {
+     aspect-ratio: 0.85;
+   }
+ }
+  img {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.7s cubic-bezier(0.8, 0, 0.22, 1);
+    aspect-ratio: 0.75;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

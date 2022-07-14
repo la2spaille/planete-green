@@ -1,0 +1,46 @@
+.c-icon{
+  &::after {
+    font-family: var(--icon-font);
+    display:inline-block;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  &.previous {
+    &::after {
+      content: "\e408";
+    }
+  }
+  &.next {
+    &::after {
+      content: "\e409";
+    }
+  }
+  &.expand {
+    &::after {
+      content: "\e5cf";
+    }
+  }
+
+  &.cart {
+    &::after {
+      content: "\f1cc";
+
+    }
+  }
+
+  &.search {
+    &::after {
+      content: "\e8b6";
+    }
+  }
+  &.phone {
+    &::after {
+      content: "\e0b0";
+    }
+  }
+  &.address {
+    &::after {
+      content: "\e55b";
+    }
+  }
+}

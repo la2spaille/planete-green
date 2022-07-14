@@ -1,0 +1,151 @@
+#product_slug {
+  .w-product_slug {
+    margin: 0 160px;
+    padding: 60px 0 0;
+    display: flex;
+    position: relative;
+  }
+
+  .w-gallery {
+    padding: 0 50px 0 0;
+    align-self: center;
+    min-width: calc(50% - 50px);
+    max-width: 50%;
+  }
+
+  .product_name {
+    font-size: 40px;
+    color: var(--green);
+    opacity: 0.9;
+
+  }
+
+  .product_description {
+    padding: 30px 0 0;
+    line-height: 1.7;
+    color: var(--grey);
+    opacity: 0.9;
+    img {
+      display: none;
+    }
+    h4,span,b {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+
+  .w-product_price {
+    display: grid;
+    padding: 25px 0 0;
+    gap: 10px;
+    grid-template: auto auto / auto auto;
+    align-self: flex-start;
+    justify-content: center;
+
+    > div {
+      display: inline-flex;
+    }
+  }
+
+  .product_price {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--green);
+  }
+
+  .product_reduction {
+    font-size: 16px;
+    padding: 2.5px 7.5px;
+    align-items: center;
+  }
+
+  .regular_price {
+    color: #73737380;
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .c-add_to_cart {
+    display: flex;
+    padding: 40px 0 0;
+    gap: 15px;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 0 15px;
+      padding: 17.5px 0;
+      background: var(--green);
+      color: #fff;
+      line-height: 1;
+      flex: 1;
+      cursor: pointer;
+    }
+  }
+
+  .w-add_to_cart_input {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(#737373, 0.1);
+    min-width: 130px;
+    padding: 0 10px;
+    align-items: center;
+
+    > div {
+      display: flex;
+      align-items: center;
+      color: var(--green);
+      font-size: 20px;
+    }
+
+    .minus,
+    .plus {
+      width: 30px;
+      height: 30px;
+      justify-content: center;
+      background: rgba(#417764, 0);
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(#417764, 0.05);
+      }
+    }
+  }
+
+  .w-lightboxes {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(var(--green), 0.3);
+    display: none;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 440px;
+      background: #fff;
+      gap: 30px;
+      justify-content: center;
+    }
+  }
+  .w-related_products_title {
+    font-size: 20px;
+    color: var(--green);
+    text-transform: capitalize;
+    margin: 0 0 20px;
+  }
+  .w-related_products {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}

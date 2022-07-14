@@ -1,0 +1,31 @@
+.w-site_cursor {
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+  will-change: transform;
+  &.site_cursor--link_hover {
+    .site_cursor {
+      transform: translate(-50%, -50%) scale(3.75);
+    }
+  }
+  @media (hover: none) {
+    display: none;
+
+  }
+}
+.site_cursor {
+  position: absolute;
+  height: 16px;
+  background-color: var(--kaki);
+  mix-blend-mode: difference;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: .35s ease-out;
+}
