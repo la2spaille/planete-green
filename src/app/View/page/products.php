@@ -1,12 +1,14 @@
 <?php
-$args = [];
-$products = wc_get_products($args);
-//$products = json_decode($products,true);
+
+use App\Model\Woocommerce;
+
+
+$products = Woocommerce::get_products();
 echo '<pre>';
 
-//var_dump($products[0]);
+var_dump(wp_create_nonce( 'wc_store_api' ));
 echo '</pre>';
-//die();
+die();
 ?>
 <div id="products" class="page p-products">
     <section id="l-s0" class="l-product">
@@ -30,12 +32,12 @@ echo '</pre>';
                         </ul>
                     </div>
                     <div class="w-product_card">
-                        <?php foreach ($products as $i => $product_o) : ?>
-                            <?php $product = json_decode($product_o, true) ?>
-                            <a class="card-product"
-                               href="<?= site_url() . "/product/" . $product['slug'] ?>">
+                        <?php foreach ($products as  $product) : ?>
+                        <div class="card-product">
+                            <a
+                               href="<?= site_url() . "/produit/" . $product['slug'] ?>">
                                 <div class="c-img products">
-                                    <img src="<?= $product['images'][0]['src'] ?>"
+                                    <img src="<?= $product['images']['src'] ?>"
                                          alt="Product image">
                                 </div>
                                 <div class="c-text products">
@@ -46,10 +48,11 @@ echo '</pre>';
                                         <?= number_format($product['price'], 2, ',') . " " . "&#8364" . " " ?>
                                     </strong>
                                 </div>
-                                <a class="add_to_card c-icon cart"
-                                   href="<?= site_url() . "/product/?add-to-cart=" . $product['id'] ?>">
-                                </a>
                             </a>
+                            <a class="add_to_card c-icon cart"
+                               href="<?= site_url() . "/produit/?add-to-cart=" . $product['id'] ?>">
+                            </a>
+                        </div>
                         <?php endforeach ?>
                         <ul class="ul-pagination">
                             <li class="c-icon previous"></li>
@@ -65,5 +68,5 @@ echo '</pre>';
             </div>
         </div>
     </section>
-    <?php include ROOT . ('View/common/footer.php'); ?>
+    <?php include SRC . 'app/View/common/footer.php'; ?>
 </div>

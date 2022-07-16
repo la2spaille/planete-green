@@ -1,3 +1,7 @@
+<?php
+use App\Config\Details;
+$details = Details::data()
+?>
 <footer id="footer">
     <div class="l-tb">
         <div class="l-rl">
@@ -5,7 +9,11 @@
                 <nav class="w-nav_footer">
                     <h3><span>Menu</span></h3>
                     <ul class="ul-nav_footer">
-
+                        <?php foreach ($details["menu"] as $menu): ?>
+                            <li class="nav_link">
+                                <a class="" href="<?= $menu['slug'] ?>"><?= $menu['name'] ?></a>
+                            </li>
+                        <?php endforeach; ?>
                     </ul>
                 </nav>
                 <div class="w-contact_footer">
@@ -24,7 +32,7 @@
                     </ul>
                 </div>
                 <div class="c-logo footer">
-                    <img src="<?= get_theme_file_uri('/media/logo_white.png') ?>" alt="Logo">
+                    <img src="<?= URI . 'media/logo_white.png' ?>" alt="Logo">
                 </div>
             </div>
             <div class="w-attribution w-flex--sb">

@@ -1,12 +1,32 @@
 <?php
-$product =  wc_get_products([]);
-$product = json_decode($product[0], true);
-$related_products =[$product,$product,$product,$product];
-//echo "<pre>";
-//var_dump($related_products);
-//var_dump($product);
-//echo "</pre>";
-//die()
+ $product= wc_get_product();
+do_shortcode('[product_categories]') ;
+die();
+
+//$id = $product->get_id();
+//$url = $_SERVER['REQUEST_URI'];
+//$url = explode('/', $url);
+//$slug = $url[count($url) - 2];
+//$args = [
+//    'status' => 'publish'
+//];
+//$products = wc_get_products($args);
+//$hh= wp_re();
+//foreach ($products as $i => $data) {
+//    $products[$i] = json_decode($data, true);
+//    $products[$i]['images'] = wc_get_product_attachment_props($products[$i]['image_id']);
+//    if ($products[$i]['slug'] == $slug) {
+//        $product = $products[$i];
+//    }
+//}
+//$rp_ids = $product;
+
+//$related_products = wc_get_product($product);
+
+echo "<pre>";
+var_dump($product);
+echo "</pre>";
+die()
 ?>
 <div id="product_slug" class="page p-product_slug">
     <section id="l-s0" class="l-product_slug">
@@ -66,7 +86,7 @@ $related_products =[$product,$product,$product,$product];
                         <a class="card-product"
                            href="/produit/<?= $product['slug'] ?>">
                             <div class="c-img products">
-                                <img src="<?= $product['images'][0]['src'] ?>"
+                                <img src="<?= $product['images']['src'] ?>"
                                      alt="Product image">
                             </div>
                             <div class="c-text products">
@@ -74,7 +94,7 @@ $related_products =[$product,$product,$product,$product];
                                     <span><?= $product['name'] ?></span>
                                 </h3>
                                 <strong class="w-product_price">
-                                    <?= number_format($product['price'],2,',') . " " . "&#8364" . " " . $product['meta_data'][2]['value'] ?>
+                                    <?= number_format($product['price'], 2, ',') . " " . "&#8364" . " " . $product['meta_data'][2]['value'] ?>
                                 </strong>
                             </div>
                             <button class="add_to_card c-icon cart">

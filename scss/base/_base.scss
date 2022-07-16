@@ -52,7 +52,7 @@ span {
     left: 0;
     &::after {
         content: "";
-        background: url("../../media/texture.png");
+        background: url("../media/texture.png");
         position: fixed;
         pointer-events: none;
         z-index: -1;

@@ -69,7 +69,7 @@ span {
 }
 .page::after {
   content: "";
-  background: url("../../media/texture.png");
+  background: url("../media/texture.png");
   position: fixed;
   pointer-events: none;
   z-index: -1;
@@ -465,15 +465,17 @@ span {
 }
 
 .card-product {
+  width: 31.5%;
+  position: relative;
+  background: transparent;
+}
+.card-product a:first-child {
+  padding: 16px;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 31.5%;
-  position: relative;
   color: var(--green);
-  background: transparent;
-  padding: 16px;
-  font-weight: 500;
   border: solid;
 }
 
@@ -490,6 +492,9 @@ span {
   position: absolute;
   right: 16px;
   bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .add_to_card::after {
   color: var(--green);

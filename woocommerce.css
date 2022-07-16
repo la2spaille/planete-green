@@ -72,6 +72,77 @@ table.shop_table_responsive tr td.download-actions .button {
 /**
  * Checkout
  */
+.woocommerce h3 {
+	margin: 0 0 30px;
+	font-size: 24px;
+	color:var(--green);
+	text-transform:capitalize;
+}
+.woocommerce-form-coupon-toggle {
+	padding: 15px;
+	background:var(--green);
+	color: var(--light)
+}
+
+.checkout_coupon {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px;
+	gap:15px;
+	color: var(--green);
+	background: var(--light)
+
+}
+.checkout_coupon p:first-child {
+	min-width: 100%;
+}
+.checkout_coupon input {
+	padding:  15px;
+	border: 2px solid var(--green);
+	background: var(--green-light)
+}
+.checkout_coupon button {
+	margin: 0 0 0 15px;
+	padding: 17.5px 15px;
+	background: var(--green);
+	color: var(--light)
+
+}
+
+.checkout.woocommerce-checkout {
+	display: flex;
+	padding: 30px 0 0;
+	gap:100px;
+
+}
+#customer_details {
+	min-width: 50%
+}
+.woocommerce-billing-fields  p {
+	color: var(--green);
+	background: var(--light);
+	margin: 0 0 15px;
+
+}
+.woocommerce-billing-fields label {
+	display: block;
+	margin:0 0 10px;
+}
+.woocommerce-billing-fields  input {
+	padding: 15px;
+	color: var(--green);
+	border: solid;
+	width: 100%
+
+
+}
+.woocommerce-input-wrapper {
+	width: 100%
+
+}
+#billing_country_field .woocommerce-input-wrapper{
+	width: 200px;
+}
 @media screen and (min-width: 768px) {
 
 	.col2-set .form-row-first {

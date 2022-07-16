@@ -1,14 +1,12 @@
-<?php
-?>
 </main>
 <!-- GL -->
-<?php include ROOT . 'View/common/header.php' ; ?>
-<?php include ROOT . 'View/common/loader.php' ; ?>
-<?php include ROOT . 'View/common/progress.php' ; ?>
-<?php include ROOT . 'View/common/cursor.php' ; ?>
+<?php include SRC . 'app/View/common/header.php' ; ?>
+<?php include SRC . 'app/View/common/loader.php' ; ?>
+<?php include SRC . 'app/View/common/progress.php' ; ?>
+<?php include SRC . 'app/View/common/cursor.php' ; ?>
 </div>
 <!-- Script -->
-<?php include ROOT . 'View/script/script.php' ; ?>
+<?php include SRC . 'app/View/script/script.php' ; ?>
 <?php wp_footer() ?>
 
 </body>

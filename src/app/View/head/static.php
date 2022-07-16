@@ -3,7 +3,7 @@
 <script>
     window.addEventListener('load', () => {
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register(<?= URI . 'js/sw.js' ?>);
+            navigator.serviceWorker.register("<?= URI . 'js/sw.js' ?>");
         }
     })
 </script>
