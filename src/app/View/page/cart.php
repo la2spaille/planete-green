@@ -1,3 +1,4 @@
+<?php var_dump(wp_create_nonce( 'wc_store_api' ));?>
 <div id="cart" class="page p-cart">
 
     <section class="l-cart" id="l-s0">

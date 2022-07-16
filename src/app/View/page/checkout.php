@@ -17,5 +17,5 @@
             </div>
         </div>
     </section>
-    <?php include ROOT . 'View/common/footer.php'; ?>
+    <?php include SRC . 'app/View/common/footer.php'; ?>
 </div>

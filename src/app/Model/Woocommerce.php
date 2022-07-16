@@ -27,18 +27,17 @@ class Woocommerce
          return self::$woocommerce->get('products?per_page=12&status=publish');
     }
     public static function get_product($slug) {
+        (new Woocommerce)->__construct();
         return self::$woocommerce->get("products?slug=$slug&status=publish");
-    }
-    public static function  test() {
-        return self::$woocommerce->get("cart");
-
     }
 
     public static function get_related_products($ids= []) {
+        (new Woocommerce)->__construct();
         return self::$woocommerce->get("products?per_page=4&status=publish&include=$ids[0],$ids[1],$ids[2],$ids[3]");
 
 }
     public static function  get_categories() {
+        (new Woocommerce)->__construct();
         return self::$woocommerce->get('products/categories?per_page=10&?hide_empty=true');
     }
 }

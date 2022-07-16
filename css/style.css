@@ -468,8 +468,6 @@ span {
   width: 31.5%;
   position: relative;
   background: transparent;
-}
-.card-product a:first-child {
   padding: 16px;
   font-weight: 500;
   display: flex;
