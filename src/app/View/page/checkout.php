@@ -1,6 +1,6 @@
 <div id="checkout" class="page p-checkout">
 
-    <section class="l-checkout" id="l-s0">
+    <section  class="l-checkout" id="l-s0">
         <div class="l-rl">
             <div class="l-tb">
                 <ul class="ul-history">

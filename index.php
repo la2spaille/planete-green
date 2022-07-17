@@ -15,7 +15,7 @@ if (is_404()) {
     include PAGE . "404.php";
 } else {
 
-    get_header();
+//    get_header();
     if (is_front_page()) {
         include PAGE . "home.php";
     } elseif (is_cart()) {

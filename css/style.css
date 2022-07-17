@@ -401,6 +401,13 @@ span {
   padding: 45px 0 50px;
 }
 
+#l-s0.l-checkout .l-rl, #l-s0.l-cart .l-rl {
+  padding: 0 135px;
+}
+#l-s0.l-checkout .l-tb, #l-s0.l-cart .l-tb {
+  padding: 45px 0;
+}
+
 .l-related_products .l-tb {
   padding: 50px 0 0;
 }
@@ -659,6 +666,14 @@ span {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+}
+
+.w-cart {
+  padding: 50px 0 0;
+}
+
+.w-checkout {
+  padding: 50px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
