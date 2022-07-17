@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="robots" content="noindex, nofollow">
-    <?php include  ROOT . 'View/head/static.php'; ?>
+    <?php include  SRC . 'app/View/head/static.php'; ?>
 
     <?php wp_head(); ?>
 </head>
