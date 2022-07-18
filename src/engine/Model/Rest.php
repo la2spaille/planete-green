@@ -6,9 +6,10 @@ class Rest
 {
     private $rooteUrl;
 
-    public function __construct($domain, $version)
+    public function __construct($domain, $version,$local = false)
     {
-        $this->rooteUrl = "https://" . $domain . "/" . $version;
+        $protocol = $local ? "http://" : "https://";
+        $this->rooteUrl = $protocol . $domain . "/" . $version;
     }
 
     public function get($endpoint = "")

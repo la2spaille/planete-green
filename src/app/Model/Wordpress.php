@@ -28,7 +28,7 @@ class Wordpress
             "menu" => [
                 0 => [
                     "name" => "Boutique",
-                    "slug" =>"boutique",
+                    "slug" => HOME . "/" . "boutique",
                     "children" => [
                         0 => [
                             "name" => "Fleurs",
@@ -68,19 +68,18 @@ class Wordpress
                         ],
 
                     ]
-
                 ],
                 1 => [
                     "name" => "Qu-est-ce que le cbd ?",
-                    "slug" => "quest-que-le-cdb",
+                    "slug" => HOME . "/" . "quest-que-le-cdb",
                 ],
                 2 => [
                     "name" => "Qui sommes nous ?",
-                    "slug" => "qui-somme-nous",
+                    "slug" => HOME . "/" . "qui-somme-nous",
                 ],
                 3 => [
                     "name" => "Où nous trouver ?",
-                    "slug" => "contact",
+                    "slug" => HOME . "/" . "contact",
                 ]
             ]
         ];

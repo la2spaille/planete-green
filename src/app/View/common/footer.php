@@ -1,6 +1,9 @@
 <?php
 use App\Config\Details;
-$details = Details::data()
+echo "avant";
+
+$details = Details::data();
+echo "apres"
 ?>
 <footer id="footer">
     <div class="l-tb">

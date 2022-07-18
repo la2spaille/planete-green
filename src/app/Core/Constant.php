@@ -13,8 +13,10 @@ class Constant
         define('SRC', $src);
         $page = SRC . "app/View/page/";
         define('PAGE', $page);
-        $uri = get_theme_file_uri() . "/";
-        define('URI', $uri);
+//        $uri = get_theme_file_uri() . "/";
+//        define('URI', $uri);
+//        $home = site_url();
+//        define('HOME', $home);
 
     }
 

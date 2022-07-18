@@ -184,12 +184,3 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 
 
-function constant_init()
-{
-    $path = get_theme_file_path() . "/";
-    $page = get_theme_file_path() . "/View/page/";
-    $uri = get_theme_file_uri() . "/";
-    define('ROOT', $path);
-    define('PAGE', $page);
-    define('URI', $uri);
-}

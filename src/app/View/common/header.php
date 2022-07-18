@@ -4,7 +4,7 @@ $details = Details::data()
 ?>
 <header id="header">
     <div class="c-logo header">
-        <a href="/"><img src="<?= $details['logo_url'] ?>" alt="Logo"></a>
+        <a href="<?= HOME?>/"><img src="<?= $details['logo_url'] ?>" alt="Logo"></a>
     </div>
     <nav class="w-nav_header">
         <ul class="ul-nav_header">
@@ -25,7 +25,7 @@ $details = Details::data()
         </ul>
     </nav>
     <ul class="ul-cta_header">
-        <li><a href="/panier" class="cart c-icon"></a></li>
+        <li><a href="<?= HOME ?>/panier" class="cart c-icon"></a></li>
         <li class="search c-icon"></li>
     </ul>
 </header>
